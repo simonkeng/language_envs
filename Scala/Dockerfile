@@ -7,8 +7,7 @@ RUN apt-get update && \
     apt-get clean;
 
 # Fix certificate issues
-RUN apt-get update && \
-    apt-get install ca-certificates-java && \
+RUN apt-get install ca-certificates-java && \
     apt-get clean && \
     update-ca-certificates -f;
 
