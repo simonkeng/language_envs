@@ -15,7 +15,7 @@ RUN apt-get install ca-certificates-java && \
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
 
-COPY src/ /var/local/src/
+COPY src/ /var/local/src
 
 # install scala
 RUN dpkg -i /var/local/src/REPLACE_ME_scala-version.deb
