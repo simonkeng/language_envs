@@ -1,12 +1,19 @@
-## Languages
+# Language Ops
 
-- C
+Containers for development and deployment, built for various programming languages with compilers and dependencies baked in.  
+
+- C ✅
 - C++
-- Rust
-- Ruby
-- Elixir
-- Go
-- Scala
+- Go 
+- Rust ✅
+- Scala ✅
+- Python ✅
 - Clojure
 - Swift
-- JavaScript
+- Elixir
+- Ruby
+- Lisp
+- Haskell
+- Fortran
+- Assembly
+- JavaScript (NodeJS)
