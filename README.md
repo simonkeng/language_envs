@@ -1,6 +1,6 @@
 # Language Ops
 
-Containers for development and deployment, built for various programming languages with compilers and dependencies baked in.  
+Minimal containers for development and deployment, built for various programming languages with compilers and dependencies baked in.  
 
 - C ✅
 - C++
