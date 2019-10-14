@@ -12,7 +12,7 @@ RUN go get github.com/urfave/cli
 RUN git clone https://github.com/oh-my-fish/oh-my-fish
 RUN cd oh-my-fish && bin/install --offline --noninteractive
 
-RUN ["/usr/bin/fish", "-c", "omf update && omf install lambda"]
+RUN ["/usr/bin/fish", "-c", "omf update && omf install batman"]
 
 
 
