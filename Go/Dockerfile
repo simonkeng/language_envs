@@ -8,6 +8,7 @@ RUN apt-get update && \
     apt-get install -y fish
 
 RUN go get github.com/urfave/cli
+RUN go get github.com/kr/pretty
 
 RUN git clone https://github.com/oh-my-fish/oh-my-fish
 RUN cd oh-my-fish && bin/install --offline --noninteractive
