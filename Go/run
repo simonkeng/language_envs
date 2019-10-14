@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+docker run \
+    -it \
+    --rm \
+    -v $(pwd):/tmp \
+    go-dev \
+    fish
