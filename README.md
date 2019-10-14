@@ -4,7 +4,7 @@ Containers for development and deployment, built for various programming languag
 
 - C ✅
 - C++
-- Go 
+- Go ✅
 - Rust ✅
 - Scala ✅
 - Python ✅
