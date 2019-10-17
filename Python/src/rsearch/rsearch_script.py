@@ -13,7 +13,8 @@ def cli(input_list_file, top_level_directory):
     with open(input_list_file, 'r') as fp:
         contents = fp.read()
 
-    search_items = contents.split('\n')
+    items = contents.split('\n')
+    search_items = list(filter(None, items))
 
     for i in search_items:
 
