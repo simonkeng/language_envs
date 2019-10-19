@@ -1,4 +1,4 @@
-import subprocess, os
+import subprocess, os, sys
 import click
 
 @click.command()
@@ -6,10 +6,22 @@ import click
 @click.option('--top_level_directory', '-t', help='location to begin search')
 def cli(input_list_file, top_level_directory):
     '''
-        Recursively search through filesystem, 
+        Recursively search through filesystem,
         greping files for keywords in the input file.
     '''
-    
+
+    if (sys.version_info < (3, 0)):
+        print('Please use a Python version 3.6 or greater.')
+        sys.exit()
+
+    try: 
+        sys.argv[1]
+    except IndexError as err:
+        print('No arguments provided\n')
+        print('Try: rsr --help\n')
+        sys.exit()
+
+
     with open(input_list_file, 'r') as fp:
         contents = fp.read()
 
