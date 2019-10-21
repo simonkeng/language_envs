@@ -5,8 +5,14 @@ RUN pip install numpy
 RUN pip install click
 
 RUN apt-get update && \
+    apt-get install -y --no-install-recommends apt-utils
+RUN apt-get update && \
     apt-get install -y vim && \
-    apt-get install -y zsh
+    apt-get install -y zsh && \ 
+    apt-get install -y curl
+
+RUN git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+RUN sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -15,7 +21,6 @@ RUN git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUS
 
 COPY config/ /root/config/
 RUN mv /root/config/.zshrc /root/.zshrc
-# CMD ["source", "/root/.zshrc"]
 
 RUN git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 RUN yes | ~/.fzf/install

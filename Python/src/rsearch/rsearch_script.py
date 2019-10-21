@@ -11,7 +11,8 @@ def cli(input_list_file, top_level_directory):
     '''
 
     if (sys.version_info < (3, 0)):
-        print('Please use a Python version 3.6 or greater.')
+        print('Please use Python 3.6 or higher')
+        print('System exit.')
         sys.exit()
 
     try: 
