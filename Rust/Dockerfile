@@ -13,11 +13,6 @@ RUN apt-get update && \
     apt-get clean;
 
 
-RUN mkdir -p /root/.vim/colors
-COPY dracula.vim /root/.vim/colors/
-
-COPY .vimrc /root
-
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
 
 ENV PATH="/root/.cargo/bin:${PATH}"
