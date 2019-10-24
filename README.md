@@ -1,19 +1,25 @@
 # Language Ops
 
-Minimal containers for development and deployment, built for various programming languages with compilers and dependencies baked in.  
+Minimal containers for development and deployment, built for various programming languages with compilers and dependencies baked in.
 
 - C ✅
 - C++
 - Go ✅
+- Lua ✅
 - Rust ✅
 - Scala ✅
 - Python ✅
 - Clojure
-- Swift
 - Elixir
 - Ruby
+- Java
+- Kotlin
 - Lisp
 - Haskell
 - Fortran
+- Swift
 - Assembly
-- JavaScript (NodeJS)
+- JavaScript (Node / ES6)
+
+
+

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+docker run \
+    -it \
+    -v $(pwd):/tmp \
+    --rm \
+    lua-dev \
+    fish
