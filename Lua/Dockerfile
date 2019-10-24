@@ -1,11 +1,13 @@
 FROM ubuntu
 
 RUN apt-get update && \
+    apt-get install -y apt-utils && \
     apt-get install -y lua5.3 && \
     apt-get install -y fish && \
     apt-get install -y curl && \
-    apt-get install -y git && \
-    apt-get install -y autoconf && \
+    apt-get install -y git
+    
+RUN apt-get install -y autoconf && \
     apt-get install -y build-essential && \
     apt-get install -y autotools-dev && \
     apt-get install -y automake && \
@@ -14,8 +16,9 @@ RUN apt-get update && \
     apt-get install -y libdevil-dev && \
     apt-get install -y libfreetype6-dev && \
     apt-get install -y libluajit-5.1-dev && \
-    apt-get install -y libphysfs-dev && \
-    apt-get install -y libsdl2-dev && \
+    apt-get install -y libphysfs-dev
+    
+RUN apt-get install -y libsdl2-dev && \
     apt-get install -y libopenal-dev && \
     apt-get install -y libogg-dev && \
     apt-get install -y libvorbis-dev && \
@@ -24,10 +27,10 @@ RUN apt-get update && \
     apt-get install -y libmodplug-dev && \
     apt-get install -y libmpg123-dev && \
     apt-get install -y libmng-dev && \
-    apt-get install -y libturbojpeg0 && \
     apt-get install -y libtheora-dev && \
     apt-get clean
 
+RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:bartbes/love-stable
 
 RUN ln -sf /usr/bin/lua5.3 /usr/bin/lua
