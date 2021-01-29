@@ -3,23 +3,23 @@
 Minimal containers for development and deployment, built for various programming languages with compilers and dependencies baked in.
 
 - C ✅
-- C++
+- C++ ✅
 - Go ✅
 - Lua ✅
 - Rust ✅
 - Scala ✅
 - Python ✅
-- Clojure
-- Elixir
+- Swift
 - Ruby
-- Java
-- Kotlin
+- Clojure
 - Lisp
 - Haskell
 - Fortran
-- Swift
 - Assembly
-- JavaScript (Node / ES6)
+- Java
+- JavaScript (Node)
+- Kotlin
+- Elixir
 
 
 
