@@ -22,4 +22,9 @@ Minimal containers for development and learning, built for various programming l
 - Elixir
 
 
+### Other goals
+
+- Containerize example programs with intriguing polyglot mixtures
+- Language layering, low level to high, CLI examples
+- Sandbox for polyglot programming exploration
 
