@@ -2,24 +2,25 @@
 
 Minimal containers for development and learning, built for various programming languages with compilers and dependencies baked in.
 
+- Assembly
 - C ✅
 - C++ ✅
+- Clojure ✅
+- Elixir
+- Fortran
 - Go ✅
+- Haskell
+- Java
+- JavaScript ✅
+- Kotlin
+- Lisp
 - Lua ✅
+- Python ✅
+- Ruby
 - Rust ✅
 - Scala ✅
-- Python ✅
 - Swift
-- Ruby
-- Clojure
-- Lisp
-- Haskell
-- Fortran
-- Assembly
-- Java
-- JavaScript (Node)
-- Kotlin
-- Elixir
+- TypeScript ✅
 
 
 ### Other goals

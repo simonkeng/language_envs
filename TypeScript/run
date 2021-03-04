@@ -1,0 +1,3 @@
+#!/bin/bash
+docker build -t ts-dev . && \
+    docker run -it -v $(pwd):/tmp ts-dev /bin/bash

@@ -1,0 +1,2 @@
+#!/bin/bash
+docker build -t js-dev . && docker run -it -v $(pwd):/tmp js-dev /bin/bash
