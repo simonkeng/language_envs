@@ -1,0 +1,3 @@
+#!/bin/bash
+set -eu
+docker build -t scala-dev . && docker run -it -v $(pwd):/tmp scala-dev bash
