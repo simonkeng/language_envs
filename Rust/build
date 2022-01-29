@@ -1,2 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
+set -eu
+
 docker build -t rust-dev .

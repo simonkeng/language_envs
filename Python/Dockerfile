@@ -24,6 +24,7 @@ RUN mv /root/config/.zshrc /root/.zshrc
 
 RUN git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 RUN yes | ~/.fzf/install
-CMD ["source", "~/.zshrc"]
 
+RUN python3 -m venv container-venv
+RUN container-venv/bin/pip install yapf pytest
 

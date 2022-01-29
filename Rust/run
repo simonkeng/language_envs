@@ -1,7 +1,9 @@
-#!/usr/bin/env bash
+#!/bin/bash
+set -eu
+
 docker run \
     -it \
     --rm \
-    -v $(pwd):/tmp \
+    -v $(pwd):/scr \
     rust-dev \
     bash
