@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 docker build -t cpp-dev . && \
-    docker run -it -v $(pwd)/tmp --rm cpp-dev bash
+    docker run -it -v $(pwd)/src:/scr --rm cpp-dev bash

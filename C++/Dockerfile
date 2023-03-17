@@ -1,9 +1,7 @@
-FROM centos
+FROM ubuntu
 
-RUN yum -y update && \
-    yum -y install gcc && \
-    yum -y install gcc-c++ && \
-    yum clean all
+RUN apt-get update -y && \
+    apt-get install -y gcc g++
 
 RUN mkdir /scr
 WORKDIR /scr
