@@ -1,7 +1,17 @@
-FROM debian
+FROM ubuntu:latest
 
-ENV DEBIAN_FRONTEND noninteractive
+RUN apt-get update -y
 
-RUN apt-get update && \
-    apt-get -y install gcc && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt-get install -y \
+    build-essential \
+    lsof \
+    strace
+
+RUN apt-get install -y \
+    man-db \
+    vim
+
+RUN useradd -ms /bin/bash zelda
+USER zelda
+WORKDIR /home/zelda
+

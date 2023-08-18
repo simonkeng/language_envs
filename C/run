@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-docker run \
-    -it \
-    --rm \
-    -v $(pwd):/tmp \
-    c-dev \
-    bash
