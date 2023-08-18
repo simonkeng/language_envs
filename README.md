@@ -1,8 +1,12 @@
 # Language Envs
 
-Minimal containers for trying out new programming languages, intended for my learning, but may be useful for prototyping. The environments are containerized to be easily deployed, and provides a  replicable runtime environment for collaboration sanity and application consistency.
+Each folder has a shell or `make` recipe to build and run containers for each language/purpose. The top level `Dockerfile` will build the `ubuenv` image that has everything. Currently I'm using VSCode and I will write code from the luxury of my colorful vim-keys IDE, but compile and execute from inside the linux containers (that I login to within the VSCode terminal), an all-in-one setup I've been enjoying lately. I often use `ubuenv` for non-development purposes such as profiling/tracing and system exploration.
 
-- Assembly
+**WARNING:** snippets may vary in readability and usefulness.
+
+_Not a complete list._
+
+- Assembly ✅
 - C ✅
 - C++ ✅
 - Clojure ✅
@@ -22,12 +26,4 @@ Minimal containers for trying out new programming languages, intended for my lea
 - Swift
 - TypeScript ✅
 
-
-### Project ideas:
-
-- Containerize programs with interesting polyglot mixtures.
-- Interface two or more languages (e.g. swig for Python --> C++).
-- Language layering, low-level to high (e.g. JS frontend that calls a Ruby backend, and uses C interface for low-level system call, then float data back up to the top).
-- Connect containers over docker network and send data between different languages (e.g. restful API between NodeJS web app and a Go/Rust web server)
-- Docker composify (or k8s) to have 4 or more containers sending and receiving data between them, passing data between languages.
 
