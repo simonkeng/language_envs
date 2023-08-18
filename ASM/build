@@ -1,0 +1,11 @@
+#!/bin/bash
+set -eu -o pipefail
+
+# assemble
+nasm -f elf64 hello.asm
+
+# link the object file nasm produced into an executable
+ld -s -o hello hello.o
+
+# hello is an executable file
+./hello
